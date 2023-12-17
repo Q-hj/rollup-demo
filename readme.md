@@ -20,7 +20,7 @@
 
 ## rollup 打包
 
-### 可以添加 [rollup.config.mjs](/rollup.config.mjs) 文件，设置完善的打包配置,可参考[rollupd 配置](https://cn.rollupjs.org/configuration-options/)
+### 可以添加 [rollup.config.js](/rollup.config.js) 文件，设置完善的打包配置,可参考[rollupd 配置](https://cn.rollupjs.org/configuration-options/)
 
 ### 创建 package.json
 
@@ -29,3 +29,9 @@ scripts 中配置 build 命令：tsc && rollup --config tsc（将 ts 转译为 j
 ## 一步到位 ✨
 
 此时运行 npm run build 即可完成打包(tsc + rollup)
+
+### 将 js 代码打包到 html 中
+
+- 安装插件 rollup-plugin-html-insert
+
+- 配置 [rollup.config.js](/rollup.config.js) 文件

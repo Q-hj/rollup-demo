@@ -1,8 +1,15 @@
 {
 	"name": "rollup-demo",
 	"version": "1.0.0",
+	"type": "module",
 	"scripts": {
 		"build": "tsc && rollup --config",
 		"tsc": "tsc"
+	},
+	"devDependencies": {
+		"@rollup/plugin-html": "^1.0.3",
+		"node-html-parser": "^6.1.11",
+		"rollup": "^4.9.0",
+		"rollup-plugin-html-insert": "^1.0.7"
 	}
 }
